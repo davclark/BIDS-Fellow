@@ -1,0 +1,101 @@
+\documentclass[12pt]{article}
+
+% This lets us load OpenType fonts from the system without any fuss. 
+% It's already required by unicode-math, but I include it for reference.
+\usepackage{fontspec}
+
+% What can I say, I love the french
+\frenchspacing
+
+% microtype enables subtle typography improvements.
+\usepackage{microtype}
+\DisableLigatures{family = tt*}
+
+% This keeps things like `` and --- working
+\defaultfontfeatures{Ligatures=TeX}
+
+\setmainfont{Linux Libertine O}
+\setsansfont{Linux Biolinum O}
+\setmonofont{Inconsolata} % Skinny and easy on the eyes
+% \setmathfont{TG Pagella Math}
+
+% geometry driver auto detection may not work for XeLaTeX below
+% \usepackage[letterpaper,includehead,margin=1in,headheight=15pt,showframe]{geometry}
+\usepackage[letterpaper,margin=1in]{geometry}
+
+% Bibliography stuff:
+% This is 1i18n overkill, including i18n of quotes
+% Also - folks seem to think polyglossia is better now (but it only works in
+% XeTeX, not LuaTeX in TeX Live 2012)
+% \usepackage[american]{babel}
+% \usepackage{csquotes}
+
+% uniquelist fixes a bug in mis-interpreting APA section 6.12, fixed in v. 6.1
+% of the apa style
+% \usepackage[style=apa,uniquelist=minyear,backend=biber]{biblatex}
+
+% More i18n overkill
+% \DeclareLanguageMapping{american}{american-apa}
+
+% \addbibresource{BIDS-app-sp2014.bib}
+
+% Other setup:
+
+% \usepackage{underscore}
+% Make it easier to print complicated tables
+% \usepackage{longtable,siunitx,tabu}
+
+% Better spacing and rules (lines, not laws)
+% \usepackage{booktabs}
+
+% \usepackage{enumitem}
+% \setlist{itemsep=0pt}
+
+% \usepackage{minted}
+
+% Note: with BibLaTeX, you should load hyperref after the biblatex package. And
+% according to the WikiBook - it should be loaded close to last.
+% \usepackage[pdfborder={0 0 0},pdfusetitle]{hyperref}
+
+\begin{document}
+The D-Lab and BIDS both have the same fundamental problem: how do we get
+collaboration right? Below, I'll discuss how I've personally encoutered the
+importance of collaboration in my own research. Then, I'll describe how I'd like
+to help BIDS develop effective collaborations, both internally and externally.
+
+\subsection*{A case study: Climate change education}
+
+The urgency and importance of meeting this challenge became
+particularly apparent in my thesis work on climate change education. There,
+models of increasing technical and scientific sophistication are continually
+increasing our certainty and understanding of the very real dangers facing our
+world. It's no secret, however, that meaningful policy change has been
+extraordinarily difficult to bring about. Indeed, only in the most recent IPCC
+report (the fifth so far) was a social scientist (Elke Weber) invited to
+contribute to recommendations for mitigating the likely dire consequences of
+global climate change.
+
+John Cook at Skeptical Science might be considered a data science pioneer in the
+climate and behavior field. He p. I am not a pioneer. I am chief scientist at
+Oroeco, where we take a consumer-spending approach to reducing carbon footrint.
+Our general approach has been tried at least twice before and those businesses
+have failed.\footnote{Technically, they pivoted. A quick search will reveal that
+both brands are still around.} However, we have the founder of the first
+such company, Saul Griffiths (a MacArthur award winner, and founder of WattzOn)
+as an advisor.  Likewise, a founding member of Efficiency 2.0 who is now working
+with Richard Mueller at the Berkeley Earth Institute, Zeke Hausfather [sp?], is
+working with us on implementing effective tips and goals for our users. Both of
+these folks believe that given the advances in social media and behavioral
+change technology that we might have a change. I hope you agree that it's worth
+a try.
+
+But the reality is that almost no one in the climate and behavior field has the
+“hacking skills” needed to do truly first-rate data science in the field of
+climate and behavior. Climate scientists certainly have access to incredible
+hacking skills for solving massive parallel systems of dynamic equations, but
+they don't necessarily have 
+
+\subsection*{Collaboration in the D-Lab and BIDS}
+
+I've been working at the D-Lab on this problem since 
+\end{document}
