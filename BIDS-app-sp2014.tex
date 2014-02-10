@@ -19,9 +19,7 @@
 \setmonofont{Inconsolata} % Skinny and easy on the eyes
 % \setmathfont{TG Pagella Math}
 
-% geometry driver auto detection may not work for XeLaTeX below
-% \usepackage[letterpaper,includehead,margin=1in,headheight=15pt,showframe]{geometry}
-\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage[letterpaper,margin=1in,driver=pdftex]{geometry}
 
 % Bibliography stuff:
 % This is 1i18n overkill, including i18n of quotes
@@ -65,35 +63,81 @@ to help BIDS develop effective collaborations, both internally and externally.
 
 \subsection*{A case study: Climate change education}
 
-The urgency and importance of meeting this challenge became
-particularly apparent in my thesis work on climate change education. There,
-models of increasing technical and scientific sophistication are continually
-increasing our certainty and understanding of the very real dangers facing our
-world. It's no secret, however, that meaningful policy change has been
-extraordinarily difficult to bring about. Indeed, only in the most recent IPCC
-report (the fifth so far) was a social scientist (Elke Weber) invited to
+The urgency and importance of meeting the challenge of scientific collaboration
+became particularly apparent in my thesis work on climate change education.
+There, models of increasing technical and scientific sophistication are
+continually increasing our certainty and understanding of the very real dangers
+facing our world. It's no secret, however, that meaningful policy change has
+been extraordinarily difficult to bring about. Indeed, only in the most recent
+IPCC report (the fifth so far) was a social scientist (Elke Weber) invited to
 contribute to recommendations for mitigating the likely dire consequences of
 global climate change.
 
-John Cook at Skeptical Science might be considered a data science pioneer in the
-climate and behavior field. He p. I am not a pioneer. I am chief scientist at
-Oroeco, where we take a consumer-spending approach to reducing carbon footrint.
-Our general approach has been tried at least twice before and those businesses
-have failed.\footnote{Technically, they pivoted. A quick search will reveal that
-both brands are still around.} However, we have the founder of the first
-such company, Saul Griffiths (a MacArthur award winner, and founder of WattzOn)
-as an advisor.  Likewise, a founding member of Efficiency 2.0 who is now working
-with Richard Mueller at the Berkeley Earth Institute, Zeke Hausfather [sp?], is
-working with us on implementing effective tips and goals for our users. Both of
-these folks believe that given the advances in social media and behavioral
-change technology that we might have a change. I hope you agree that it's worth
-a try.
+% http://theconversation.com/the-truth-is-out-there-so-how-do-you-debunk-a-myth-22641?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+conversationedu+(The+Conversation)
+John Cook at Skeptical Science and the University of Queensland might be
+considered a data science pioneer in the climate and behavior field. He runs
+what is likely the highest profile “climate truth” website, and had a successful
+campaign largely via Twitter and Facebook last year to fight misinformation
+about scientific consensus with this verified fact: over 97\% of publishing
+climate researchers accept the reality of human-caused climate change. 
+
+I am not a pioneer. I am chief scientist at Oroeco, where we take a
+consumer-spending approach to reducing carbon footrint.  Our general approach
+has been tried at least twice before (at WattzOn and Efficiency 2.0) and those
+businesses have failed.\footnote{Technically, they pivoted. A quick search will
+    reveal that both brands are still around.} However, we have MacArthur
+“genius” Saul Griffith -- the founder of WattzOn -- as an advisor and he
+believes it's worth another shot, especially given advances in working through
+social media and mobile interactivity. Likewise, a founding member of Efficiency
+2.0 who is now working with Richard Mueller at the Berkeley Earth Institute --
+Zeke Hausfather -- is working with us on implementing effective tips and goals
+for our users. I hope you agree with us that this it's worth a try.
 
 But the reality is that almost no one in the climate and behavior field has the
 “hacking skills” needed to do truly first-rate data science in the field of
-climate and behavior. Climate scientists certainly have access to incredible
-hacking skills for solving massive parallel systems of dynamic equations, but
-they don't necessarily have 
+climate and behavior. To any likely reader of this application, the research
+done by John Cook, Saul Griffith, and Zeke Hausfather is pretty simple-minded.
+Climate scientists certainly have access to incredible hacking skills for
+solving massive parallel systems of dynamic equations, but they don't
+have the combination of social-behavioral science and facility with
+web technologies and social media required to do a the job we need to be doing.
+
+Species are going extinct, % cite?
+and humans are already suffering as a consequence of global climate change. %Hsiang
+This will continue to happen, but it is within our power to make it a little
+more or a little less.
+
+I don't have the skills or bandwidth to properly design, evaluate, and rapidly
+iterate on the conceptual and behavioral change interventions that would
+mitigate climate change and its impacts. I certainly don't have the documented
+billion dollars that have been spent on anti-science misinformation. 
+
+I need collaborators. 
+
+\subsection*{So what \emph{can} I do?}
+
+Novel analysis technique using inter-subject correlation in fMRI signals to
+observe the neural correlates of ecological learning.\footnote{Specifically,
+    viewing an episode of \emph{Curb Your Enthusiasm}}
+
+For my thesis research, I evaluated a number of interventions using
+crowdsourcing on Amazon Mechanical Turk. I implemented a solution in JavaScript
+to prevent Turkers from enrolling in more than one of my experiments (a common
+problem). %cite?
+I also implemented a simple geo-IP based tool to determine whether individuals were
+correctly reporting their location (two participants had in fact managed to
+bypass Amazon restrictions on U.S.-only participants). Lastly, I implemented a
+hybrid natural langauge processing solution / google web services solution to
+check for individuals copying textual answers from the web instead of honestly
+answering the question (turns out several people did this, even though there was
+no consequence of answering poorly, and I told them I'd provide the correct
+answer later).
+Oh, and I also dealt with unicode issues.
+
+With my team at Oroeco, I've set up an analytics environment using Vagrant such
+that, even though he has no idea what he's actually doing, our CEO can spin up a
+Linux VM, sync our live database to a local PostgreSQL server, and look at
+up-to-the-minute visualizations in IPython notebooks that we share via GitHub.
 
 \subsection*{Collaboration in the D-Lab and BIDS}
 
