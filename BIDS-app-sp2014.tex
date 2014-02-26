@@ -18,7 +18,8 @@
 
 \setmainfont{Linux Libertine O}
 \setsansfont{Linux Biolinum O}
-\setmonofont{Inconsolata-g} % Skinny and easy on the eyes
+\setmonofont{Source Code Pro}
+% \setmonofont{Inconsolata-g} % Skinny and easy on the eyes
 % \setmathfont{TG Pagella Math}
 
 % This is i18n overkill
@@ -60,7 +61,8 @@
 
 % Note: with BibLaTeX, you should load hyperref after the biblatex package. And
 % according to the WikiBook - it should be loaded close to last.
-% \usepackage[pdfborder={0 0 0},pdfusetitle]{hyperref}
+% pdfusetitle doesn't do much here (there's no TOC), but may as well keep it.
+\usepackage[hidelinks,pdfusetitle]{hyperref}
 
 \begin{document}
 The D-Lab and BIDS both have the same fundamental problem: how do we get
@@ -182,6 +184,18 @@ I am currently engaged on a number of fronts with the creation of modular
 content that can help individuals correctly and efficiently select and apply
 computational techniques to their scientific question.
 
+\begin{enumerate}
+    \item Engaging in the dialogue between science and power (i.e., money,
+        religion)
+
+    \item Working with the newly funded Psychological Data Science center (TODO
+        - get correct title) with Tom Griffiths.
+
+        List types of data and devices / methodologies.
+
+    \item BITSS Course
+
+\end{enumerate}
 
 \subsubsection*{Curated Data Sets}
 
@@ -210,13 +224,13 @@ shared with Jon:
         municipal datasets.
 
     \item Coordinate with the Data Science for Social Good fellows program
-        (http://dssg.io).
+        (\url{http://dssg.io}).
 
         I've been working on ramping up a bay area hub to coordinate with DSSG,
         picking up community partners with analysis problems they can't
         currently solve, and finding “data scientists” who can help at Berkeley
         and Stanford (and later, elsewhere). I've got a nascent site up with
-        Lester Mackey \& Andreas Stuhlmueller at Stanford:
+        Lester Mackey \& Andreas Stuhlmüller at Stanford:
         http://statsforchange.org
 
     \item Enabling collaborative evaluation with D-Lab / Software Carpentry style
