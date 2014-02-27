@@ -1,70 +1,29 @@
-\documentclass[12pt]{article}
-\usepackage[letterpaper,margin=1in,driver=pdftex]{geometry}
+\input{preamble.tex}
 
-% This lets us load OpenType fonts from the system without much fuss.
-% It's already required by unicode-math, but I'm not using math here (and it's
-% worth being redundant)!
-\usepackage{fontspec}
+\rehead[]{Dav Clark -- Proposal -- Data Science for Social Impact}        % equal page, right position (inner)
+\lohead[]{Dav Clark -- Proposal -- Data Science for Social Impact}        % odd   page, left  position (inner)
+% Describe the intended research project in more detail, including the
+% anticipated impact of your proposed project on advancing scientific discovery
+% in your field. (3 page maximum)
 
-% What can I say, I love the french
-\frenchspacing
-
-% microtype enables subtle typography improvements.
-\usepackage{microtype}
-\DisableLigatures{family = tt*}
-
-% This keeps things like `` and --- working, even though I use “ and ” now...
-\defaultfontfeatures{Ligatures=TeX}
-
-\setmainfont{Linux Libertine O}
-\setsansfont{Linux Biolinum O}
-\setmonofont{Source Code Pro}
-% \setmonofont{Inconsolata-g} % Skinny and easy on the eyes
-% \setmathfont{TG Pagella Math}
-
-% This is i18n overkill
-% Also - folks seem to think polyglossia is better now (but support in LuaTeX is
-% still a WIP in TeX Live 2013)
-\usepackage{polyglossia}
-\setdefaultlanguage[variant=american]{english}
-
-% Disable morpheme-boundary-crossing ligatures
-\usepackage[american]{selnolig}
-
-% i18n of quotes - use for biblatex, but also potentially useful outside
-% \usepackage{csquotes}
-
-%% For bib if I end up using it.
-
-% uniquelist fixes a bug in mis-interpreting APA section 6.12, fixed in v. 6.1
-% of the apa style
-% \usepackage[style=apa,backend=biber]{biblatex}
-
-% More i18n overkill
-% \DeclareLanguageMapping{american}{american-apa}
-
-% \addbibresource{BIDS-app-sp2014.bib}
-
-% Other setup:
-
-% \usepackage{underscore}
-% Make it easier to print complicated tables
-% \usepackage{longtable,siunitx,tabu}
-
-% Better spacing and rules (lines, not laws)
-% \usepackage{booktabs}
-
-% \usepackage{enumitem}
-% \setlist{itemsep=0pt}
-
-% \usepackage{minted}
-
-% Note: with BibLaTeX, you should load hyperref after the biblatex package. And
-% according to the WikiBook - it should be loaded close to last.
-% pdfusetitle doesn't do much here (there's no TOC), but may as well keep it.
-\usepackage[hidelinks,pdfusetitle]{hyperref}
+% I had been working on these as a separate application:
+% 
+%  - Could also involve Jon & Richmond Bay, or more generally Bay Area hub (Richmond + Oakland, etc)
+%  - Proposal to BIDS as instructional development grant on picking up ill-fitting
+%    project from DSSG.io and existing local
+%  - $20k as a starting budget for a GSR to work on this
+%  - Anno could support a GSR?
+%  - Mention Bay Area hub, but call out Richmond Bay.
 
 \begin{document}
+
+% \title{Data Science for Social Impact}
+% \author{Dav Clark} % must match BearFacts!
+% \maketitle
+\manualmark
+\pagestyle{scrheadings}
+\markleft{}
+
 The D-Lab and BIDS both have the same fundamental problem: how do we get
 collaboration right? We are in an era where science could markedly decrease
 human suffering and species loss on a global scale. I fear, however, that the
