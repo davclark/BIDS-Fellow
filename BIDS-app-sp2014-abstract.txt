@@ -1,2 +1,12 @@
-150 word abstract
-
+Global warming akin to recent and projected trends last occurred over 17 million
+years ago, when a 3-4°C gain occurred over 1,500,000 years. The current trend
+will likely yeild comparable warming in 100 years. Historically, warming is
+correlated with extinction, so this is really bad. This challenge presents a
+tremendous opportunity for science to be employed across disciplinary boundaries
+-- ranging from climatology to behavior change to public policy -- and in the
+process prevent mass extinctions and human suffering. We don't yet have the
+capacity to do this kind of science. I would like to collaborate with BIDS on
+enabling this capacity. In the D-Lab, I'm developing tools and helping social
+scientists gain skills that enable access to new sources of data and new methods
+of analysis.  Working with a network of peers, I can rapidly iterate on
+approaches that will help address climate change and other global challenges.
