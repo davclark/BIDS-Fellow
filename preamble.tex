@@ -8,11 +8,13 @@
 % \usepackage[footinclude=off]{typearea}
 \usepackage[letterpaper,margin=1in,driver=pdftex]{geometry}
 
-\clearscrheadfoot                 % deletes header/footer
-\pagestyle{scrheadings}           % use following definitions for header/footer
+% gets rid of page numbering at bottom
+\clearscrheadfoot
+\pagestyle{scrheadings}
 % definitions/configuration for the header
 \lehead[]{\pagemark} % equal page, left (outer) position
 \rohead[]{\pagemark}
+% Then define custom \rehead[]{Stuff} and \lohead[]{Stuff} in the document
 
 % This lets us load OpenType fonts from the system without much fuss.
 % It's already required by unicode-math, but I'm not using math here (and it's
